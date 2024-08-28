@@ -9,6 +9,8 @@ jobs:
   security:
     name: Security Checks
     runs-on: ubuntu-20.04
+    ## Don't run within the template repo
+    if: contains(github.repository, 'template') == false
     permissions:
       # required for all workflows
       security-events: write
