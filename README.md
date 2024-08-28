@@ -14,9 +14,9 @@ This repo includes the following built-in workflows:
 
 ## Semantic Versioning
 
-In order to promote changes to this repository, you must understand Semantic Versioning style commit messages. These types of commit messages allow developers to influence the versioning of the package in an accessible way.
+In order to promote changes to this repository, you must understand Semantic Versioning style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
 
-Semantic Version commits should be made upon merging in a PR, which in turn will influence the next version number of the release. This allows developers to no have to worry about maintaining version numbers directly.
+_Semantic Version commit messages **must** be made upon merging in a PR, which in turn will influence the next version number of the release._
 
 | Commit Prefix     | Commit Message                          | SemVer Output                           |
 | ----------------- | --------------------------------------- | --------------------------------------- |
