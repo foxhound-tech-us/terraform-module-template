@@ -18,13 +18,13 @@ In order to promote changes to this repository, you must understand Semantic Ver
 
 Semantic Version commits should be made upon merging in a PR, which in turn will influence the next version number of the release. This allows developers to no have to worry about maintaining version numbers directly.
 
-| Commit Prefix     | Commit Message                          | Description                                       |
-| ----------------- | --------------------------------------- | ------------------------------------------------- |
-| `fix`             | `fix: add output property`              | This will increment the SemVer patch version by 1 |
-| `feat`            | `feat: add CMEK to resource`            | This will increment the SemVer minor version by 1 |
-| `breaking change` | `breaking change: totally reworked i/o` | This will increment the SemVer major version by 1 |
+| Commit Prefix     | Commit Message                          | SemVer Output                           |
+| ----------------- | --------------------------------------- | --------------------------------------- |
+| `fix`             | `fix: add output property`              | Increment SemVer **patch** version by 1 |
+| `feat`            | `feat: add CMEK to resource`            | Increment SemVer **minor** version by 1 |
+| `breaking change` | `breaking change: totally reworked i/o` | Increment SemVer **major** version by 1 |
 
-The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning.
+The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning. It is not necessary to use SemVer commits during the normal development cycle, it is only necessary during merges.
 
 ## Prerequisites
 
