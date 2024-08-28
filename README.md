@@ -14,15 +14,17 @@ This repo includes the following built-in workflows:
 
 ## Semantic Versioning
 
-In order to promote changes to this repository, you must understand Semantic Versioning style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
+In order to promote changes to this repository, you must understand Conventional Commit style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
 
-_Semantic Version commit messages **must** be made upon merging in a PR, which in turn will influence the next version number of the release._
+_Conventional Commit messages **must** be made upon merging in a PR, which in turn will influence the next version number of the release._
 
 | Commit Prefix     | Commit Message                          | SemVer Output                           |
 | ----------------- | --------------------------------------- | --------------------------------------- |
 | `fix`             | `fix: add output property`              | Increment SemVer **patch** version by 1 |
 | `feat`            | `feat: add CMEK to resource`            | Increment SemVer **minor** version by 1 |
 | `breaking change` | `breaking change: totally reworked i/o` | Increment SemVer **major** version by 1 |
+
+[More information about Conventional Commits can be found here.](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 
 The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning. It is not necessary to use SemVer commits during the normal development cycle, it is only necessary during merges.
 
