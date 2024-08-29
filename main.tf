@@ -3,5 +3,5 @@
 ################################################################################
 
 locals {
-  example_var = "example ${var.example_input}"
+  example_var = "example-${var.example_input}"
 }

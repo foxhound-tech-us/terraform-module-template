@@ -11,6 +11,7 @@ This repo includes the following built-in workflows:
 - Checkov to check for baseline compliance of HCL code
 - Dependabot for Github Actions
 - Semantic Versioning of releases
+  - PRs are checked to ensure their name matches Conventional Commit style
 
 ## Semantic Versioning
 
@@ -25,6 +26,7 @@ _Conventional Commit messages **must** be made upon merging in a PR, which in tu
 | `breaking change` | `breaking change: totally reworked i/o` | Increment SemVer **major** version by 1 |
 
 [More information about Conventional Commits can be found here.](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+[PR names are checked with the following Github Action](https://github.com/amannn/action-semantic-pull-request)
 
 The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning. It is not necessary to use SemVer commits during the normal development cycle, it is only necessary during merges.
 

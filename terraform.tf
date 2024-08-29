@@ -1,9 +1,15 @@
+################################################################################
+# Terraform Configuration
+################################################################################
 terraform {
   required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~>6.0"
-    }
+    // add providers here
   }
   required_version = "~>1.9"
 }
+
+################################################################################
+# Provider Configuration
+################################################################################
+
+// add explicit provider configuration blocks here
