@@ -3,7 +3,7 @@
 ################################################################################
 terraform {
   required_providers {
-    // add providers here
+    # add providers here
   }
   required_version = "~>1.9"
 }
@@ -12,4 +12,4 @@ terraform {
 # Provider Configuration
 ################################################################################
 
-// add explicit provider configuration blocks here
+# add explicit provider configuration blocks here
