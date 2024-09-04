@@ -63,6 +63,8 @@ terraform destroy
 <details>
 <summary>Standard Terraform Module Docs</summary>
 
+---
+
 This repository was bootstrapped via Terraform module template. That means it is preconfigured for certain workflows.
 
 This repo includes the following built-in workflows:
