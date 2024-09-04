@@ -2,6 +2,7 @@
 
 > [!TIP]
 > Make sure you understand how to interact with this repository via commit messages
+>
 > [Standard Module Repository Docs](#standard-module-repository-docs)
 
 Template Repository that is used to bootstrap new modules.
@@ -91,11 +92,15 @@ _Conventional Commit messages **must** be made upon merging in a PR, which in tu
 | `major`       | `major: rework module structure` | Increment SemVer **major** version by 1 |
 
 [More information about Conventional Commits can be found here.](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+
 [PR names are checked with the following Github Action](https://github.com/amannn/action-semantic-pull-request)
 
 The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning. It is not necessary to use SemVer commits during the normal development cycle, it is only necessary during merges.
 
-### Push Module Action
+### Push Terraform Module Action
+
+> [!IMPORTANT]  
+> You _must_ configure the Github Action correctly in order to push modules to HCP/TFE
 
 The `.github/workflows/release.yml` file has an action for pushing modules to HCP/TFE. This needs to be altered to match your server, as well as the module.
 
