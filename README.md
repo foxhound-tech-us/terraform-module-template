@@ -35,6 +35,8 @@ The [detailed SemVer specification can be found here](https://semver.org/), but 
 
 The `.github/workflows/release.yml` file has an action for pushing modules to HCP/TFE. This needs to be altered to match your server, as well as the module.
 
+See documentation for [bruceharrison1984/terraform-push-module](https://github.com/bruceharrison1984/terraform-push-module) on how to configure pushing to TFE/HCP.
+
 ## Prerequisites
 
 TBD

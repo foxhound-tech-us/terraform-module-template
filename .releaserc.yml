@@ -1,15 +1,20 @@
+## docs: https://semantic-release.gitbook.io/semantic-release/usage/configuration
 branches: main
 plugins:
-  - - '@semantic-release/commit-analyzer'
+  - - "@semantic-release/commit-analyzer"
     - preset: conventionalCommits
       releaseRules:
         - type: docs
           release: patch
         - type: ci
           release: patch
+        - type: fix
+          release: minor
+        - type: feat
+          release: minor
         - type: major
           release: major
-  - - '@semantic-release/release-notes-generator'
+  - - "@semantic-release/release-notes-generator"
     - preset: conventionalCommits
       presetConfig:
         types:
@@ -23,6 +28,5 @@ plugins:
             section: Features
           - type: major
             section: Breaking Changes
-  - '@semantic-release/git'
-  - '@semantic-release/github'
-  
+  - "@semantic-release/git"
+  - "@semantic-release/github"
