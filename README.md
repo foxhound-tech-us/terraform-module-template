@@ -1,5 +1,9 @@
 # terraform-module-template
 
+> [!TIP]
+> Make sure you understand how to interact with this repository via commit messages
+> [Standard Module Repository Docs](#standard-module-repository-docs)
+
 Template Repository that is used to bootstrap new modules.
 
 This repo includes the following built-in workflows:
@@ -13,29 +17,6 @@ This repo includes the following built-in workflows:
 - Semantic Versioning of releases
   - PRs are checked to ensure their name matches Conventional Commit style
 - Push Module to HCP/TFE
-
-## Semantic Versioning
-
-In order to promote changes to this repository, you must understand Conventional Commit style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
-
-_Conventional Commit messages **must** be made upon merging in a PR, which in turn will influence the next version number of the release._
-
-| Commit Prefix     | Commit Message                          | SemVer Output                           |
-| ----------------- | --------------------------------------- | --------------------------------------- |
-| `fix`             | `fix: add output property`              | Increment SemVer **patch** version by 1 |
-| `feat`            | `feat: add CMEK to resource`            | Increment SemVer **minor** version by 1 |
-| `breaking change` | `breaking change: totally reworked i/o` | Increment SemVer **major** version by 1 |
-
-[More information about Conventional Commits can be found here.](https://www.conventionalcommits.org/en/v1.0.0/#summary)
-[PR names are checked with the following Github Action](https://github.com/amannn/action-semantic-pull-request)
-
-The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning. It is not necessary to use SemVer commits during the normal development cycle, it is only necessary during merges.
-
-## Push Module Action
-
-The `.github/workflows/release.yml` file has an action for pushing modules to HCP/TFE. This needs to be altered to match your server, as well as the module.
-
-See documentation for [bruceharrison1984/terraform-push-module](https://github.com/bruceharrison1984/terraform-push-module) on how to configure pushing to TFE/HCP.
 
 ## Prerequisites
 
@@ -89,3 +70,33 @@ terraform destroy
 { .Content }
 
 <!-- END_TF_DOCS -->
+
+## Standard Module Repository Docs
+
+> [!IMPORTANT]  
+> This section should be left in each repo to provide the necessary instructions on how to interact with it.
+
+### Semantic Versioning
+
+In order to promote changes to this repository, you must understand Conventional Commit style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
+
+_Conventional Commit messages **must** be made upon merging in a PR, which in turn will influence the next version number of the release._
+
+| Commit Prefix | Commit Message                   | SemVer Output                           |
+| ------------- | -------------------------------- | --------------------------------------- |
+| `docs`        | `docs: update readme`            | Increment SemVer **patch** version by 1 |
+| `fix`         | `fix: add output property`       | Increment SemVer **patch** version by 1 |
+| `ci`          | `ci: updated ci scripts`         | Increment SemVer **patch** version by 1 |
+| `feat`        | `feat: add CMEK to resource`     | Increment SemVer **minor** version by 1 |
+| `major`       | `major: rework module structure` | Increment SemVer **major** version by 1 |
+
+[More information about Conventional Commits can be found here.](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+[PR names are checked with the following Github Action](https://github.com/amannn/action-semantic-pull-request)
+
+The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning. It is not necessary to use SemVer commits during the normal development cycle, it is only necessary during merges.
+
+### Push Module Action
+
+The `.github/workflows/release.yml` file has an action for pushing modules to HCP/TFE. This needs to be altered to match your server, as well as the module.
+
+See documentation for [bruceharrison1984/terraform-push-module](https://github.com/bruceharrison1984/terraform-push-module) on how to configure pushing to TFE/HCP.
