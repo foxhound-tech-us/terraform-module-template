@@ -12,6 +12,7 @@ This repo includes the following built-in workflows:
 - Dependabot for Github Actions
 - Semantic Versioning of releases
   - PRs are checked to ensure their name matches Conventional Commit style
+- Push Module to HCP/TFE
 
 ## Semantic Versioning
 
@@ -29,6 +30,10 @@ _Conventional Commit messages **must** be made upon merging in a PR, which in tu
 [PR names are checked with the following Github Action](https://github.com/amannn/action-semantic-pull-request)
 
 The [detailed SemVer specification can be found here](https://semver.org/), but simply following the rules above is sufficient to produce proper module versioning. It is not necessary to use SemVer commits during the normal development cycle, it is only necessary during merges.
+
+## Push Module Action
+
+The `.github/workflows/release.yml` file has an action for pushing modules to HCP/TFE. This needs to be altered to match your server, as well as the module.
 
 ## Prerequisites
 
