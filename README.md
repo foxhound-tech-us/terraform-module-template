@@ -62,12 +62,8 @@ terraform destroy
 
 <details>
 <summary>Standard Terraform Module Docs</summary>
-> [!TIP]
-> Make sure you understand how to interact with this repository via commit messages
->
-> [Standard Module Repository Docs](#standard-module-repository-docs)
 
-Template Repository that is used to bootstrap new modules.
+This repository was bootstrapped via Terraform module template. That means it is preconfigured for certain workflows.
 
 This repo includes the following built-in workflows:
 
@@ -79,7 +75,8 @@ This repo includes the following built-in workflows:
 - Dependabot for Github Actions
 - Semantic Versioning of releases
   - PRs are checked to ensure their name matches Conventional Commit style
-- Push Module to HCP/TFE
+- Run Terraform Test on PRs and Releases
+- Push Module to HCP/TFE after Release
 
 ### Semantic Versioning
 
