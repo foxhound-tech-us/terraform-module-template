@@ -98,7 +98,6 @@ _Conventional Commit messages **must** be made upon merging in a PR, which in tu
 
 ### Push Terraform Module Action
 
-> [!IMPORTANT]  
 > You _must_ configure the Github Action correctly in order to push modules to HCP/TFE
 
 The `.github/workflows/release.yml` file has an action for pushing modules to HCP/TFE. This needs to be altered to match your server, as well as the module.
