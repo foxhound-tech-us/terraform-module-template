@@ -80,6 +80,10 @@ This repo includes the following built-in workflows:
 - Run Terraform Test on PRs and Releases
 - Push Module to HCP/TFE after Release
 
+## Branch Protections
+
+Branch Protections need to be setup for each repostiory created based on the template respository. Branch protects, secrets, etc are _not_ copied when using a template repository.
+
 ### Semantic Versioning
 
 In order to promote changes to this repository, you must understand Conventional Commit style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
