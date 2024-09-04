@@ -104,4 +104,6 @@ The `.github/workflows/release.yml` file has an action for pushing modules to HC
 
 See documentation for [bruceharrison1984/terraform-push-module](https://github.com/bruceharrison1984/terraform-push-module) on how to configure the action for pushing to TFE/HCP.
 
+Module version numbers are derived from previous versions and Conventional Commit messages.
+
 </details>
