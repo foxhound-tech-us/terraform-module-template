@@ -1,4 +1,4 @@
-name: Security Checks
+name: Checkov
 
 on: pull_request
 
@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   security:
-    name: Security Checks
+    name: Run Checkov
     runs-on: ubuntu-20.04
     permissions:
       # required for all workflows
