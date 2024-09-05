@@ -82,7 +82,16 @@ This repo includes the following built-in workflows:
 
 ### Github PR Rules
 
-You should configure the repository to require certain checks to avoid merging in non-compliant code.
+You should configure the repository to require certain checks to avoid merging in non-compliant code. Assuming the names of checks have not been changed, the following things should be added:
+
+- Checkov / Run Checkov
+- Lint / TFLint
+- Lint / GitHub Action Lint
+- Lint / YAML Lint
+- Lint / Terraform Format
+- Pre-release / Semantic Title
+- Pre-release / Terraform Test
+- Pre-release / Terraform Docs
 
 ### Semantic Versioning
 
