@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-        uses: actions/checkout@44c2b7a8a4ea60a981eaca3cf939b5f4305c123b # v4.1.5
+        uses: actions/checkout@4.1.7
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd # v3.1.2
         with:
@@ -33,7 +33,7 @@ jobs:
       version_number: ${{ steps.release.outputs.new_version_number }}
     steps:
       - name: Checkout
-        uses: actions/checkout@44c2b7a8a4ea60a981eaca3cf939b5f4305c123b # v4.1.5
+        uses: actions/checkout@4.1.7
       - name: Release
         id: release
         uses: cycjimmy/semantic-release-action@cb425203a562475bca039ba4dbf90c7f9ac790f4 # v4.1.0
@@ -50,13 +50,13 @@ jobs:
     needs: release
     steps:
       - name: Checkout
-        uses: actions/checkout@44c2b7a8a4ea60a981eaca3cf939b5f4305c123b # v4.1.5
+        uses: actions/checkout@4.1.7
       - id: terraform-push-module
         uses: bruceharrison1984/terraform-push-module@1.0.0 ## ensure using latest version
         with:
           serverUri: https://app.terraform.io ## can be replaced with TFE URL
           organizationName: my-hcp-org
-          moduleName: my-module
+          moduleName: ${{ github.event.repository.name }}
           authToken: ${{ secrets.TFE_TOKEN }} ## token should be securely stored in GitHub Secrets
           providerName: aws
           versionString: ${{ needs.release.outputs.version_number }} ## source version from release plugin
