@@ -45,7 +45,7 @@ jobs:
   terraform-docs:
     name: Terraform Docs
     runs-on: ubuntu-22.04
-    needs: title
+    needs: tftest
     ## Allow updating of PR branch TF Docs
     permissions:
       contents: write
