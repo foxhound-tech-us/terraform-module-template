@@ -86,6 +86,9 @@ You should configure the repository to require certain checks to avoid merging i
 
 ### Semantic Versioning
 
+> [!IMPORTANT]  
+> **You must use `squash` commits for PRs in order for this workflow to function properly. You cannot use merge commits, you must use the name of the PR as the commit message.**
+
 In order to promote changes to this repository, you must understand Conventional Commit style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
 
 _Conventional Commit messages **must** be made upon merging in a PR, which in turn will influence the next version number of the release._
