@@ -80,10 +80,6 @@ This repo includes the following built-in workflows:
 - Run Terraform Test on PRs and Releases
 - Push Module to HCP/TFE after Release
 
-## Branch Protections
-
-Branch Protections need to be setup for each repostiory created based on the template respository. Branch protects, secrets, etc are _not_ copied when using a template repository.
-
 ### Semantic Versioning
 
 In order to promote changes to this repository, you must understand Conventional Commit style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
@@ -111,5 +107,9 @@ The `.github/workflows/release.yml` file has an action for pushing modules to HC
 See documentation for [bruceharrison1984/terraform-push-module](https://github.com/bruceharrison1984/terraform-push-module) on how to configure the action for pushing to TFE/HCP.
 
 Module version numbers are derived from previous versions and Conventional Commit messages.
+
+### Auto-Documentation
+
+Module documentation will automatically be completed upon creating a PR. You do not need to fill out the [Module Documentation](#module-documentation) section by hand.
 
 </details>
