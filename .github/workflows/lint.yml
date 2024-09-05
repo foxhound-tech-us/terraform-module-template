@@ -46,7 +46,7 @@ jobs:
           terraform_version: 1.8.0
       - name: Lint Terraform Files
         run: |
-          terraform fmt -recursive -check
+          terraform fmt -recursive -check -diff
   tflint:
     name: TFLint
     runs-on: ubuntu-22.04
