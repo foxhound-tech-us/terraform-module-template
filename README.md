@@ -80,6 +80,10 @@ This repo includes the following built-in workflows:
 - Run Terraform Test on PRs and Releases
 - Push Module to HCP/TFE after Release
 
+### Github PR Rules
+
+You should configure the repository to require certain checks to avoid merging in non-compliant code.
+
 ### Semantic Versioning
 
 In order to promote changes to this repository, you must understand Conventional Commit style commit messages. These types of commit messages allow code reviewers to influence the versioning of the package in an accessible way.
