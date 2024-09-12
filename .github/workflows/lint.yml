@@ -4,6 +4,8 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions: read-all
+
 jobs:
   actionlint:
     name: GitHub Action Lint
@@ -22,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.7
       - name: Setup Python
-        uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5.2.0
+        uses: actions/setup-python@v5.2.0
         with:
           python-version: 3.12
       - name: Install yamllint
@@ -44,7 +46,7 @@ jobs:
           terraform_version: 1.8.0
       - name: Lint Terraform Files
         run: |
-          terraform fmt -recursive -check
+          terraform fmt -recursive -check -diff
   tflint:
     name: TFLint
     runs-on: ubuntu-22.04
