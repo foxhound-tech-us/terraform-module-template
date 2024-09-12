@@ -8,6 +8,8 @@ plugins:
           release: patch
         - type: ci
           release: patch
+        - type: chore
+          release: patch
         - type: fix
           release: minor
         - type: feat
@@ -22,6 +24,8 @@ plugins:
             section: Documentation
           - type: ci
             section: CI
+          - type: chore
+            release: Chores
           - type: fix
             section: Bug Fixes
           - type: feat
