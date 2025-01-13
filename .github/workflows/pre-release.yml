@@ -56,7 +56,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Generate Docs
-        uses: terraform-docs/gh-actions@e47bfa196e79fa50987ef391be236d9d97b0c786 # v1.2.0
+        uses: terraform-docs/gh-actions@aeae0038ed47a547e0c0fca5c059d3335f48fb25 # v1.3.0
         with:
           indention: 3
           fail-on-diff: true
